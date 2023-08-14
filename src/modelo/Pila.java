@@ -5,12 +5,8 @@ import java.util.LinkedList;
 public class Pila <T extends Base>{
     
     private LinkedList<T> tope;
-    
-    public Pila(){
-        
-    }
 
-    public Pila(LinkedList<T> tope) {
+    public Pila() {
         tope = new LinkedList<>();
     }
     
@@ -18,8 +14,8 @@ public class Pila <T extends Base>{
         tope.addFirst(elemento);
     }
     
-    public void desapilar(){
-        
+    public T desapilar(){
+        return tope.removeFirst();
     }
     
     public Boolean apilar(){
