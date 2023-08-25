@@ -1,12 +1,14 @@
 package datos;
 
-public class persona {
+import modelo.Base;
+
+public class Persona extends Base{
     
     private String nombreP;
     private String direcP;
     private int edadP;
 
-    public persona(String nombreP, String direcP, int edadP) {
+    public Persona(String nombreP, String direcP, int edadP) {
         this.nombreP = nombreP;
         this.direcP = direcP;
         this.edadP = edadP;
@@ -73,4 +75,9 @@ public class persona {
         return nombreP +  direcP +  edadP;
     }
     
+    @Override
+    public Base copy() {
+        return new Persona(nombreP, direcP, edadP);
+    }
+
 }

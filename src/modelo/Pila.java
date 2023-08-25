@@ -21,6 +21,10 @@ public class Pila <T extends Base>{
     public Boolean apilar(){
         return tope.isEmpty();
     }
+    
+    public boolean estaVacia(){
+       return tope.isEmpty();
+   }
 
     @Override
     public String toString() {
