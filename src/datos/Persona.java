@@ -2,8 +2,8 @@ package datos;
 
 import modelo.Base;
 
-public class Persona extends Base{
-    
+public class Persona extends Base {
+
     private String nombreP;
     private String direcP;
     private int edadP;
@@ -13,7 +13,7 @@ public class Persona extends Base{
         this.direcP = direcP;
         this.edadP = edadP;
     }
-    
+
     /**
      * Get the value of edadP
      *
@@ -32,7 +32,6 @@ public class Persona extends Base{
         this.edadP = edadP;
     }
 
-
     /**
      * Get the value of direcP
      *
@@ -50,7 +49,6 @@ public class Persona extends Base{
     public void setDirecP(String direcP) {
         this.direcP = direcP;
     }
-
 
     /**
      * Get the value of nombreP
@@ -72,9 +70,9 @@ public class Persona extends Base{
 
     @Override
     public String toString() {
-        return nombreP +  direcP +  edadP;
+        return nombreP + direcP + edadP;
     }
-    
+
     @Override
     public Base copy() {
         return new Persona(nombreP, direcP, edadP);

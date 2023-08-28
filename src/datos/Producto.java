@@ -2,7 +2,7 @@ package datos;
 
 import modelo.Base;
 
-public class Producto extends Base{
+public class Producto extends Base {
 
     private String nombreProducto;
     private String codigoProducto;
@@ -30,8 +30,7 @@ public class Producto extends Base{
         this.valorProducto = valorProducto;
     }
 
-
-public String getNombreProducto() {
+    public String getNombreProducto() {
         return nombreProducto;
     }
 
@@ -47,5 +46,5 @@ public String getNombreProducto() {
     @Override
     public Base copy() {
         return new Producto(nombreProducto, codigoProducto, valorProducto);
-    } 
+    }
 }
